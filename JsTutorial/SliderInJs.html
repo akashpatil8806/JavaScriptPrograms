@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silder</title>
+    <link rel="stylesheet" href="style.css">
+   
+    
+</head>
+<body>
+    <div id="silde-container">
+        <div class="sild">
+            <img src="img1.jpg" alt="">
+        </div>
+        <div id="caption">Text 1</div>
+    </div>
+
+    <div id="silde-container">
+        <div class="sild">
+            <img src="img2.jpg" alt="">
+        </div>
+        <div id="caption">Text 2</div>
+    </div>
+
+    <div id="silde-container">
+        <div class="sild">
+            <img src="img3.jpg" alt="">
+        </div>
+        <div id="caption">Text 3</div>
+    </div>
+
+    <div id="silde-container">
+        <div class="sild">
+            <img src="img4.jpg" alt="">
+        </div>
+        <div id="caption">Text 4</div>
+    </div>
+
+    <span class="arrow next" onclick="controller(+1)">&#10094;</span>
+    <span class="arrow prev" onclick="controller(-1)">&#10095;</span>
+    
+
+    <!-- <script>
+        let flag=2;
+        show(flag)
+        function controller(x){
+            flag=flag+1;
+        }
+        function show(num){
+            let sildes=document.getElementById("sild");
+            sildes[num].style.display="block";
+
+        }
+
+    </script> -->
+    <script src="script.js"></script>
+</body>
+</html>
