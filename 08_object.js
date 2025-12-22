@@ -19,3 +19,17 @@ console.log(a);
 console.log(student)
 console.log(typeof(student))
 console.log(student["address"])
+
+
+// Object
+
+let Person={
+    "name":"Kartik",
+    "Age":22,
+    "City":"Pune",
+    "Mobile":7495498563
+}
+
+console.log(Person);
+
+console.log(Person.name)

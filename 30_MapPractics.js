@@ -1,7 +1,7 @@
 // This is the Map function in the javascript
 
 let map =new Map();
-console.log(typeof(map));
+console.log("the typeof the map is",typeof(map));
 
 map.set(11,"Roy")
 map.set(22,"Disha")

@@ -1,10 +1,10 @@
 // this is the arrow function,Arrow functions were introduced in ES6.
 // we can write function in the one line using the arrow function
 
-const greet = () => {
-    console.log("Hello!");
+const greet = (element) => {
+    console.log("Hello!",element);
 };
-greet()
+greet("class")
 
 // we pass the arguments
 let fun=(a,b)=>a+b;
@@ -24,3 +24,9 @@ let multi=(a,b)=>{
 }
 
 console.log(multi(2,7))
+
+
+// this is the simple Arrow funcion syntax 
+const Demo=((i)=>{console.log(`${i}`)});
+
+Demo("Akash")

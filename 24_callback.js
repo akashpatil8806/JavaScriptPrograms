@@ -7,11 +7,11 @@ const datas = [
 function getdata() {
   setTimeout(() => {
     let output = "";
-    datas.forEach((data, index) => {
+    datas.forEach((data, index) => { 
       output += `<li>${data.name}</li>`;
     });
-    // document.body.innerHTML=output;
-    console.log(output);
+     document.body.innerHTML=output;
+    // console.log(output);
   }, 1000);
 }
 function createdata(newdata) {
@@ -24,14 +24,20 @@ function createdata(newdata) {
       } else {
         reject("kay tar gadbad ahe...");
       }
-      
-      getdata }, 2000);
+
+      getdata;
+    }, 2000);
   });
 }
 // createdata({ name: "tom", work: "job" }).then(getdata).catch(err=console.log( err));
 
-async function Demo(){
-    await createdata({ name: "tom", work: "job" }).then(getdata).catch(err=console.log( err));
-    getdata()
+async function Demo() {
+  await createdata({ name: "tom", work: "job" })
+  .then(getdata)
+  .catch((err)=>err)
+  
+    
+  
+  getdata();
 }
-Demo()
+Demo();
